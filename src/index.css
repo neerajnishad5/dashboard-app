@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 4px; /* for horizontal scroll */
+  width: 4px; /* for vertical scroll */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #eaebea;
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #d4d5d4;
+}
+
+/* Hides the native calendar icon on Chrome, Edge, Safari */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
+
+@layer utilities {
+  .custom-border {
+    @apply absolute left-2 right-2 bottom-0 h-[2px] bg-[#008745] rounded-t-full translate-y-1/2;
+  }
+}
