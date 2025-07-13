@@ -1,12 +1,75 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dashboard PetPooja
 
-Currently, two official plugins are available:
+A responsive web dashboard built with React and Tailwind CSS, designed to visualize and manage key metrics and data for PetPooja. Includes user-friendly navigation, and modern UI components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](dashboard.png)
 
-## Expanding the ESLint configuration
+## 🔗 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[View the Live Dashboard](https://dashboard-petpooja.netlify.app/)
+
+---
+
+## ✅ Prerequisites
+
+- **Node.js** >= 18.x  
+- **npm** >= 9.x
+
+## 🚀 Instructions to Run
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine using:
+
+```bash
+git clone https://github.com/neerajnishad5/dashboard-app.git
+````
+---
+
+### 2. Install Dependencies
+
+Navigate to the project directory:
+
+```bash
+cd dashboard-app
+```
+
+Install the required Node.js dependencies:
+
+```bash
+npm install
+```
+
+---
+
+### 3. Start the Application
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the application.
+
+
+---
+
+## 🛠️ List of Tools Used
+
+* **React**: For building the user interface.
+* **Tailwind CSS**: For styling and responsive design.
+* **React Router**: For navigation between pages.
+* **Vite**: For fast development and build tooling.
+* **npm**: For package management.
+
+---
+
+### ⏱️ Time Taken
+
+Approximately **16 hours**, including design, development, and responsive adjustments.
+
+### 📬 Contact
+
+For feedback, questions, or collaboration, connect with me on [LinkedIn](https://www.linkedin.com/in/neerajnishad) or open an issue in this repository.
