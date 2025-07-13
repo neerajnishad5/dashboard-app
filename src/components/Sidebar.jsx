@@ -84,7 +84,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
         ))}
       </nav>
 
-      <div className="mt-[6rem]">
+      <div className="mt-[45%]">
         <div className="chat flex flex-col justify-start p-2 rounded shadow-sm mb-2">
           <p className="text-[12px]">
             <span className="flex items-center gap-2">
@@ -106,7 +106,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
           </div>
           {!localIsCollapsed && (
             <div className="user flex flex-col leading-tight text-sm">
-              <p className="font-semibold text-gray-800 text-[12px]">Ajay</p>
+              <p className="font-semibold text-gray-800 text-[12px]">Neeraj</p>
               <p className="text-gray-500 text-[12px]">Manager</p>
             </div>
           )}
