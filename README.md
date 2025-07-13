@@ -68,7 +68,7 @@ Open your browser and visit [http://localhost:5173](http://localhost:5173) to vi
 
 ### ⏱️ Time Taken
 
-Approximately **16 hours**, including design, development, and responsive adjustments.
+Approximately **16-20 hours**, including design, development, and responsive adjustments.
 
 ### 📬 Contact
 
