@@ -24,7 +24,7 @@ export default function WidgetCard({ logoPath, title, labels, values }) {
         <h3 className="text-[14px] font-semibold">{title}</h3>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2 sm:gap-3">
+      <div className="mt-2 flex gap-2 sm:gap-3">
         {labels.map((label, index) => {
           const color = colors[index % colors.length];
           return (
