@@ -5,7 +5,7 @@ export default function WorkFlowCard({ data }) {
       <div className="flex justify-between items-center mb-4">
         <p className="text-[12px] font-semibold text-gray-800">{data.title}</p>
         <img
-          src="../../public/assets/icons/eye.svg"
+          src="/assets/icons/eye.svg"
           alt="eye"
           className="w-5 h-5"
         />

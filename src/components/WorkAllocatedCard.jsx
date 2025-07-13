@@ -14,7 +14,7 @@ export default function WorkAllocatedCard({
         <div className="flex justify-between id-and-comment mb-1">
           <div className="id text-[#969796] text-[12px] font-medium flex items-center">
             <img
-              src="../../public/assets/icons/chevron-up.svg"
+              src="/assets/icons/chevron-up.svg"
               alt="chevron"
               className="mr-1"
             />
@@ -22,7 +22,7 @@ export default function WorkAllocatedCard({
           </div>
           <div className="comment text-xs text-gray-500 flex items-center">
             <img
-              src="../../public/assets/icons/msg-circle.svg"
+              src="/assets/icons/msg-circle.svg"
               alt="msg"
               className="mr-1"
             />
@@ -39,7 +39,7 @@ export default function WorkAllocatedCard({
             {/* Calendar + Date */}
             <div className="flex items-center space-x-1">
               <img
-                src="../../public/assets/icons/calendar-dotted-card.svg"
+                src="/assets/icons/calendar-dotted-card.svg"
                 alt="calendar-icon"
                 className="w-4 h-4"
               />
@@ -49,7 +49,7 @@ export default function WorkAllocatedCard({
             {/* Clock + Time */}
             <div className="flex items-center space-x-1">
               <img
-                src="../../public/assets/icons/clock.svg"
+                src="/assets/icons/clock.svg"
                 alt="clock-icon"
                 className="h-4"
               />
@@ -66,7 +66,7 @@ export default function WorkAllocatedCard({
           {/* Status with book icon */}
           <div className="flex items-center space-x-1 text-gray-500">
             <img
-              src="../../public/assets/icons/book.svg"
+              src="/assets/icons/book.svg"
               alt="book-icon"
               className="w-6"
             />
@@ -78,7 +78,7 @@ export default function WorkAllocatedCard({
           {/* location */}
           <div className="location flex justify-center items-center bg-[#f2f4f6] rounded-full p-1">
             <img
-              src="../../public/assets/icons/briefcase.svg"
+              src="/assets/icons/briefcase.svg"
               alt="briefcase"
               className="mx-1 w-4 h-4"
             />

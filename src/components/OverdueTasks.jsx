@@ -16,13 +16,13 @@ export default function OverdueTasks({ data }) {
         </h3>
         <div className="input-icons flex items-center justify-center gap-2">
           <img
-            src="../../public/assets/icons/hyperlink.svg"
+            src="/assets/icons/hyperlink.svg"
             alt="hyperlink-icon"
             className="h-[32px] w-[32px] object-contain"
           />
 
           <img
-            src="../../public/assets/icons/three-dots.svg"
+            src="/assets/icons/three-dots.svg"
             alt="three-dots"
             className="h-[32px] w-[32px] object-contain"
           />
@@ -63,7 +63,7 @@ export default function OverdueTasks({ data }) {
                   </td>
                   <td className="p-2 text-center">{task.dueDate}</td>
                   <td className="p-2 text-center flex justify-center items-center hover:cursor-pointer">
-                    <img src="../../public/assets/icons/reassign.svg" alt="reassign" />
+                    <img src="/assets/icons/reassign.svg" alt="reassign" />
                   </td>
                 </tr>
               ))}

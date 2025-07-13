@@ -41,7 +41,7 @@ export default function DepartmentWiseAllocation({ data }) {
 
         <div className="input-icons flex items-center justify-center gap-2">
           <img
-            src="../../public/assets/icons/three-dots.svg"
+            src="/assets/icons/three-dots.svg"
             alt="three-dots"
             className="h-[32px] w-[32px] object-contain"
           />

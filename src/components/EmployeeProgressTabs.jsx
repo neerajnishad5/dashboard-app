@@ -23,13 +23,13 @@ function EmployeeProgressTabs({ data }) {
           </select>
 
           <img
-            src="../../public/assets/icons/hyperlink.svg"
+            src="/assets/icons/hyperlink.svg"
             alt="hyperlink-icon"
             className="h-[32px] w-[32px] object-contain"
           />
 
           <img
-            src="../../public/assets/icons/three-dots.svg"
+            src="/assets/icons/three-dots.svg"
             alt="three-dots"
             className="h-[32px] w-[32px] object-contain"
           />

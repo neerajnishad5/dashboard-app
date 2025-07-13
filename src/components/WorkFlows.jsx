@@ -39,9 +39,9 @@ export default function Workflows() {
       <div className="header flex justify-between items-center border-b border-[#eaebea]">
         <p className="text-[14px] font-semibold  pb-4">Workflows</p>
         <div className="images flex justify-center ">
-          <img src="../../public/assets/icons/hyperlink.svg" alt="hyper-link" />
+          <img src="/assets/icons/hyperlink.svg" alt="hyper-link" />
           <img
-            src="../../public/assets/icons/three-dots.svg"
+            src="/assets/icons/three-dots.svg"
             alt="three-dots"
           />
         </div>

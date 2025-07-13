@@ -17,13 +17,13 @@ export default function PersonalNotepad({ tasks }) {
         </h3>
         <div className="input-icons flex items-center justify-center gap-2">
           <img
-            src="../../public/assets/icons/hyperlink.svg"
+            src="/assets/icons/hyperlink.svg"
             alt="hyperlink-icon"
             className="h-9 w-[32px] object-contain"
           />
 
           <img
-            src="../../public/assets/icons/three-dots.svg"
+            src="/assets/icons/three-dots.svg"
             alt="three-dots"
             className="h-9 w-[32px] object-contain"
           />
