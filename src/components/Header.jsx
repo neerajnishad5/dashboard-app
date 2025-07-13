@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ function Header() {
                 <img src="/assets/icons/header-logo.svg" alt="Logo" className="h-8" />
               </div>
             </div>
-            <div className="home-icon flex items-center ml-4 sm:ml-6">
+            <div className="home-icon hidden md:flex items-center ml-4 sm:ml-6">
               <img
                 src="/assets/icons/home-black.svg"
                 alt="Home Icon"
@@ -37,8 +37,8 @@ function Header() {
                   type="date"
                   name="date-selector"
                   id="date-selector"
-                  className="border px-2 py-1 rounded text-sm pr-8 appearance-none custom-date-input bg-[#f2f4f6] w-28 sm:w-32"
-                  value={new Date().toISOString().split('T')[0]}
+                  className="  px-2 py-1 rounded text-sm pr-8 appearance-none custom-date-input bg-[#f2f4f6] w-28 sm:w-32"
+                  value={new Date().toISOString().split("T")[0]}
                 />
                 <img
                   src="/assets/icons/calendar-dotted.svg"
@@ -46,7 +46,7 @@ function Header() {
                   className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 pointer-events-none"
                 />
               </div>
-              <div className="flex items-center border rounded px-2 py-1 space-x-2">
+              <div className="flex items-center bg-[#f3f4f7] rounded px-2 py-1 space-x-2">
                 <img
                   src="/assets/icons/building.svg"
                   alt="Building"
@@ -55,7 +55,7 @@ function Header() {
                 <select
                   id="outlet-name"
                   name="outlet-name"
-                  className="outline-none text-sm bg-transparent w-24 sm:w-32"
+                  className="outline-none text-sm bg-transparent"
                 >
                   <option value="default" disabled>
                     -- Select --
@@ -188,5 +188,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
