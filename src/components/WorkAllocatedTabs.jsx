@@ -158,7 +158,7 @@ export default function WorkAllocatedTabs() {
       </div>
 
       <div className="overflow-y-auto max-h-44 scrollbar-custom scroll-smooth">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-2">
           {tabsData[activeTab].map((item, index) => (
             <WorkAllocatedCard
               key={index}
