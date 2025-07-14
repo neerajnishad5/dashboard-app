@@ -287,7 +287,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-[78rem] mx-auto">
+    <div
+      className={` ${
+        localStorage.getItem("sidebarCollapsed") === "false"
+          ? "transition-all duration-300 ease-in-out max-w-[91rem] mx-auto"
+          : "max-w-[78rem] mx-auto"
+      }`}
+    >
       <div className="flex flex-col md:flex-row gap-4 max-w-[99%] px-2 sm:px-3 overflow-x-auto whitespace-nowrap pb-4 scrollbar-custom scroll-smooth">
         {cards.map((card, index) => (
           <WidgetCard

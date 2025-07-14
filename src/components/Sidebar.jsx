@@ -40,12 +40,11 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
   };
 
   return (
-   <div
-  className={`hidden md:block fixed top-16 left-0 h-[calc(100vh-4rem)] border-r-2 border-r-[#f5f5f4] p-4 transition-all duration-300 ease-in-out ${
-    localIsCollapsed ? "w-16" : "w-60"
-  } flex flex-col`}
->
-
+    <div
+      className={`hidden md:block fixed top-16 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${
+        localIsCollapsed ? 'w-16' : 'w-60'
+      } flex flex-col justify-between`}
+    >
       <nav className="space-y-2 mt-8">
         {navItems.map(({ to, label, icon }, index) => (
           <div className="relative" key={to}>
