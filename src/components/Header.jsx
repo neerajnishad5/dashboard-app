@@ -14,7 +14,7 @@ export default function Header() {
                 <img src="/assets/icons/header-logo.svg" alt="Logo" className="h-8" />
               </div>
             </div>
-            <div className="home-icon hidden md:flex items-center ml-4 sm:ml-6">
+            <div className="home-icon hidden md:flex items-center ml-4 sm:ml-14">
               <img
                 src="/assets/icons/home-black.svg"
                 alt="Home Icon"
