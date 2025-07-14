@@ -41,7 +41,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
 
   return (
    <div
-  className={`hidden md:block fixed top-16 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${
+  className={`hidden md:block fixed top-16 left-0 h-[calc(100vh-4rem)] border-r-2 border-r-[#f5f5f4] p-4 transition-all duration-300 ease-in-out ${
     localIsCollapsed ? "w-16" : "w-60"
   } flex flex-col`}
 >
@@ -75,7 +75,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
             bg-[#018744] text-white 
             hover:bg-white hover:text-[#018744]
             border border-[#018744]
-            transition-colors absolute top-1/2 -right-4 transform -translate-y-1/2"
+            transition-colors absolute top-1/2 -right-4 transform -translate-y-1/2 hover:cursor-pointer"
               >
                 {localIsCollapsed ? ">" : "<"}
               </button>
