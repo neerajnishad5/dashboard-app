@@ -17,8 +17,8 @@ export default function App() {
   }
 
   const [isCollapsed, setIsCollapsed] = useState(() => {
-    const savedState = localStorage.getItem('sidebarCollapsed');
-    return savedState ? JSON.parse(savedState) : false;
+    const isSidebarCollapsed = localStorage.getItem("sidebarCollapsed");
+    return isSidebarCollapsed ? JSON.parse(isSidebarCollapsed) : false;
   });
 
   useEffect(() => {

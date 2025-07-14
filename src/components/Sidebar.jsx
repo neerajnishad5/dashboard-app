@@ -7,29 +7,19 @@ const navItems = [
   { to: "/issues", label: "Issues", icon: "alert-circle.svg" },
   { to: "/forms", label: "Forms", icon: "form.svg" },
   { to: "/calendar", label: "Calendar", icon: "calendar-dotted.svg" },
-  {
-    to: "/browse-template",
-    label: "Browser Template",
-    icon: "browse-template.svg",
-  },
-  {
-    to: "/template-library",
-    label: "Template Library",
-    icon: "template-lib.svg",
-  },
-  {
-    to: "/user-management",
-    label: "User Management",
-    icon: "user-management.svg",
-  },
+  { to: "/browse-template", label: "Browser Template", icon: "browse-template.svg" },
+  { to: "/template-library", label: "Template Library", icon: "template-lib.svg" },
+  { to: "/user-management", label: "User Management", icon: "user-management.svg" },
   { to: "/reports", label: "Reports", icon: "reports.svg" },
   { to: "/settings", label: "Settings", icon: "settings.svg" },
   { to: "/logout", label: "Logout", icon: "logout.svg" },
 ];
 
 export default function Sidebar({ isCollapsed, setIsCollapsed }) {
+
   const [localIsCollapsed, setLocalIsCollapsed] = useState(isCollapsed);
   const username = "Neeraj";
+
   useEffect(() => {
     setLocalIsCollapsed(isCollapsed);
   }, [isCollapsed]);
@@ -40,7 +30,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
   };
 
   return (
-    <div className={`hidden md:block fixed top-16 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${localIsCollapsed ? 'w-16' : 'w-60'} flex flex-col justify-between`}>
+    <div className={`hidden md:block fixed top-9 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${localIsCollapsed ? 'w-16' : 'w-60'} flex flex-col justify-between`}>
       <nav className="space-y-2 mt-8">
         {navItems.map(({ to, label, icon }, index) => (
           <div className="relative" key={to}>
