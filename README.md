@@ -5,7 +5,7 @@ A responsive web dashboard built with React and Tailwind CSS, designed to visual
 
 ![alt text](dashboard.png)
 
-# 🗂️ Initial Layout Sketch (Excalidraw)
+## 🗂️ Initial Layout Sketch (Excalidraw)
 
 This is the initial wireframe sketched in Excalidraw to outline the structure and layout of the PetPooja dashboard before development. It helped plan the structure, component hierarchy and UI flow.
 
