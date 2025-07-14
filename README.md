@@ -5,6 +5,12 @@ A responsive web dashboard built with React and Tailwind CSS, designed to visual
 
 ![alt text](dashboard.png)
 
+# 🗂️ Initial Layout Sketch (Excalidraw)
+
+This is the initial wireframe sketched in Excalidraw to outline the structure and layout of the PetPooja dashboard before development. It helped plan the structure, component hierarchy and UI flow.
+
+![alt text](dashboard-app-layout-1.png)
+
 ## 🔗 Live Demo
 
 [View the Live Dashboard](https://dashboard-petpooja.netlify.app/)
@@ -72,4 +78,4 @@ Approximately **16-20 hours**, including design, development, and responsive adj
 
 ### 📬 Contact
 
-For feedback, questions, or collaboration, connect with me on [LinkedIn](https://www.linkedin.com/in/neerajnishad) or open an issue in this repository.
+For feedback, questions, or collaboration, reach out via email at [neerajnishad57@gmail.com](mailto:neerajnishad5@gmail.com) or open an issue in this repository.
