@@ -1,11 +1,7 @@
-import React from "react";
-
-function Tasks() {
+export default function Tasks() {
   return (
     <div>
-      <p>hello this is texts</p>
+      <p>Tasks</p>
     </div>
   );
 }
-
-export default Tasks;

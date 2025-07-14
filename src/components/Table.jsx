@@ -1,4 +1,4 @@
-function Table() {
+export default function Table() {
   const data = [
     { id: 1, name: 'Task 1', status: 'In Progress', due: '2025-07-15' },
     { id: 2, name: 'Task 2', status: 'Completed', due: '2025-07-10' },
@@ -29,5 +29,3 @@ function Table() {
     </div>
   );
 }
-
-export default Table;
