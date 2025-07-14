@@ -29,7 +29,7 @@ const navItems = [
 
 export default function Sidebar({ isCollapsed, setIsCollapsed }) {
   const [localIsCollapsed, setLocalIsCollapsed] = useState(isCollapsed);
-
+  const username = "Neeraj";
   useEffect(() => {
     setLocalIsCollapsed(isCollapsed);
   }, [isCollapsed]);
@@ -98,15 +98,24 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
           </p>
         </div>
 
-        <div className="bottom-sidebar flex items-center gap-3 p-2 bg-[#f6f8fb] rounded-md">
-          <div className="image">
-            <p className="bg-green-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-medium">
-              A
+        <div
+          className={`bottom-sidebar flex items-center gap-3 p-2 bg-[#f6f8fb] rounded-md ${
+            localIsCollapsed && "m-0 p-0"
+          }`}
+        >
+          <div className={`image  ${localIsCollapsed && " w-5 h-5"}`}>
+            <p
+              className={`bg-green-600 text-white flex items-center justify-center rounded-full text-sm font-medium 
+    ${localIsCollapsed ? "w-5 h-5 text-xs" : "w-8 h-8 text-sm"}`}
+            >
+              {username.charAt(0)}
             </p>
           </div>
           {!localIsCollapsed && (
             <div className="user flex flex-col leading-tight text-sm">
-              <p className="font-semibold text-gray-800 text-[12px]">Neeraj</p>
+              <p className="font-semibold text-gray-800 text-[12px]">
+                {username}
+              </p>
               <p className="text-gray-500 text-[12px]">Manager</p>
             </div>
           )}
