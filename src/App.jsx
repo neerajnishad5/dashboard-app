@@ -36,9 +36,20 @@ export default function App() {
               isCollapsed ? "md:ml-16" : "md:ml-60"
             }`}
           >
-            <p className="font-inter font-semibold text-[18px] leading-[100%] tracking-[0%] mb-2 mt-6 ml-5">
-              {getGreeting()} ! Neeraj
-            </p>
+            <div className="greeting-widget-card flex justify-between items-center">
+              <div className="greeting">
+                <p className="font-semibold text-[18px] leading-[100%] tracking-[0%] mb-6 mt-6 ml-5">
+                  {getGreeting()} ! Neeraj
+                </p>
+              </div>
+
+              <div className="widget-card">
+                <img
+                  src="/public/assets/icons/widget-btn.svg"
+                  alt="widget-btn"
+                />
+              </div>
+            </div>
 
             <Routes>
               <Route path="/" element={<Home />} />
