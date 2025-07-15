@@ -45,7 +45,7 @@ export default function App() {
 
               <div className="widget-card">
                 <img
-                  src="/public/assets/icons/widget-btn.svg"
+                  src="/assets/icons/widget-btn.svg"
                   alt="widget-btn"
                 />
               </div>
