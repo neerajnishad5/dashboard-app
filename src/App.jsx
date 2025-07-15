@@ -29,7 +29,7 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <div className="flex flex-1 overflow-x-clip">
+        <div className="flex flex-1 overflow-x-scroll">
           <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
          <main
             className={`flex-1 m-4 mt-16 transition-all duration-300 ${

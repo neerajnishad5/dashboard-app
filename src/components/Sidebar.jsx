@@ -69,7 +69,7 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
         ))}
       </nav>
 
-      <div className="mt-[60%]">
+      <div className="mt-[75%]">
         <div className="chat flex flex-col justify-start p-2 rounded shadow-sm mb-2">
           <p className="text-[12px]">
             <span className="flex items-center gap-2">
