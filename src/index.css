@@ -31,7 +31,6 @@ body {
   background: #d4d5d4;
 }
 
-/* Hides the native calendar icon on Chrome, Edge, Safari */
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
   display: none;
