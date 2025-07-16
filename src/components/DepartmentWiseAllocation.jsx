@@ -47,7 +47,7 @@ export default function DepartmentWiseAllocation({ data }) {
           />
         </div>
       </div>
-      <div className="flex space-x-4 mb-4 text-[12px] border-[#eaebea] border-b pb-1 mt-1">
+      <div className="flex space-x-4 mb-4 text-[12px] border-[#eaebea] border-b pb-1 mt-1 overflow-x-auto scrollbar-custom scroll-smooth">
         {["Tasks", "Issues", "Forms"].map((tab) => (
           <button
             key={tab}

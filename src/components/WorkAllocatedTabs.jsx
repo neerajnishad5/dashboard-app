@@ -135,7 +135,7 @@ export default function WorkAllocatedTabs() {
         </select>
       </div>
 
-      <div className="flex space-x-4 mb-4 text-[12px]">
+      <div className="flex space-x-4 mb-4 text-[12px] overflow-x-auto scrollbar-custom scroll-smooth">
         {["Tasks", "Issues", "Forms"].map((tab) => (
           <button
             key={tab}

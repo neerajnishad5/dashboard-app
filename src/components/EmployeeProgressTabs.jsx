@@ -11,7 +11,7 @@ function EmployeeProgressTabs({ data }) {
 
   return (
     <div className="mt-4 border-[#eaebea] border rounded-2xl p-2 m-4">
-      <div className="flex justify-between items-center mb-2">
+      <div className="flex justify-between items-center mb-2 overflow-x-auto scrollbar-custom scroll-smooth">
         <p className="text-lg font-semibold mx-2 my-1 text-[14px]">
           Employee wise progress
         </p>
@@ -35,7 +35,7 @@ function EmployeeProgressTabs({ data }) {
           />
         </div>
       </div>
-      <div className="flex space-x-4 text-[12px]">
+      <div className="flex space-x-4 text-[12px] overflow-x-auto scrollbar-custom scroll-smooth">
         {["Tasks", "Issues", "Workflows"].map((tab) => (
           <button
             key={tab}
@@ -58,7 +58,7 @@ function EmployeeProgressTabs({ data }) {
       </div>
       <div className="overflow-x-auto">
         <div className="overflow-y-auto max-h-[173px] pr-2 scrollbar-custom scroll-smooth">
-          <table className="w-full text-sm border-collapse table-fixed">
+            <table className="w-full text-sm border-collapse text-[12px]">
             <thead>
               <tr className="bg-gray-100 text-[12px] text-[#212121]">
                 <th className="p-2 text-left w-1/6">Name</th>
