@@ -273,16 +273,36 @@ export default function Home() {
     ],
   };
 
-  const workFlowData = [
+  const workflowData = [
     {
-      title: "Workflow Title",
-      response: 35,
-      tasks: 22,
+      title: "Stock Control Strategies",
+      responseCount: 23,
+      taskCount: 44,
+      assignedTo: "Vikram",
     },
     {
-      title: "Another Workflow",
-      response: 40,
-      tasks: 30,
+      title: "Supplier Onboarding",
+      responseCount: 15,
+      taskCount: 27,
+      assignedTo: "Priya",
+    },
+    {
+      title: "Inventory Optimization",
+      responseCount: 32,
+      taskCount: 40,
+      assignedTo: "Rahul",
+    },
+    {
+      title: "Order Fulfillment Review",
+      responseCount: 18,
+      taskCount: 36,
+      assignedTo: "Ajita",
+    },
+    {
+      title: "Order Fulfillment Review",
+      responseCount: 18,
+      taskCount: 36,
+      assignedTo: "Ajita",
     },
   ];
 
@@ -321,7 +341,7 @@ export default function Home() {
           <OverdueTasks data={overdueData} />
         </div>
         <div className="w-full sm:w-1/2">
-          <Workflows data={workFlowData} />
+          <Workflows data={workflowData} />
         </div>
       </div>
     </div>
