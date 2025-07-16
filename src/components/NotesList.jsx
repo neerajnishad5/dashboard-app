@@ -25,12 +25,7 @@ export default function NotesList({ tasks, expandedTasks, handleNoteClick }) {
               </p>
             </div>
             <p
-              className={`text-xs text-gray-600 p-2 ml-5 ${
-                expandedTasks.includes(index)
-                  ? "bg-[#fff] rounded-xl p-4 mt-2"
-                  : ""
-              }`}
-            >
+              className={`text-xs text-gray-600 p-2 ml-5 ${expandedTasks.includes(index) ? "bg-[#fff] rounded-xl p-4 mt-2" : "" }`} >
               {task.description}
             </p>
           </div>
