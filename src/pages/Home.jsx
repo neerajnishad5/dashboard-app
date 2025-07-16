@@ -215,63 +215,57 @@ export default function Home() {
     ],
   };
 
-  const overdueData = {
-    Tasks: [
-      {
-        name: "Stock Management",
-        assignedTo: "Ajita",
-        status: "Overdue",
-        dueDate: "12-07-2025",
-        reassign: "Yes",
-      },
-      {
-        name: "Employee Scheduling",
-        assignedTo: "Rahul",
-        status: "Overdue",
-        dueDate: "10-07-2025",
-        reassign: "No",
-      },
-      {
-        name: "Report Generation",
-        assignedTo: "Priya",
-        status: "Overdue",
-        dueDate: "15-07-2025",
-        reassign: "Yes",
-      },
-    ],
-    Issues: [
-      {
-        name: "Server Downtime",
-        assignedTo: "Ajita",
-        status: "Completed",
-        dueDate: "09-07-2025",
-        reassign: "Yes",
-      },
-      {
-        name: "Payment Bug",
-        assignedTo: "Rahul",
-        status: "Overdue",
-        dueDate: "11-07-2025",
-        reassign: "No",
-      },
-    ],
-    Workflows: [
-      {
-        name: "Workflow Review",
-        assignedTo: "Priya",
-        status: "Overdue",
-        dueDate: "13-07-2025",
-        reassign: "Yes",
-      },
-      {
-        name: "Process Audit",
-        assignedTo: "Vikram",
-        status: "Overdue",
-        dueDate: "14-07-2025",
-        reassign: "No",
-      },
-    ],
-  };
+  const overdueData = [
+    {
+      name: "Stock Management",
+      assignedTo: "Ajita",
+      status: "Overdue",
+      dueDate: "12-07-2025",
+      reassign: "Yes",
+    },
+    {
+      name: "Employee Scheduling",
+      assignedTo: "Rahul",
+      status: "Overdue",
+      dueDate: "10-07-2025",
+      reassign: "No",
+    },
+    {
+      name: "Report Generation",
+      assignedTo: "Priya",
+      status: "Overdue",
+      dueDate: "15-07-2025",
+      reassign: "Yes",
+    },
+    {
+      name: "Server Downtime",
+      assignedTo: "Ajita",
+      status: "Completed",
+      dueDate: "09-07-2025",
+      reassign: "Yes",
+    },
+    {
+      name: "Payment Bug",
+      assignedTo: "Rahul",
+      status: "Overdue",
+      dueDate: "11-07-2025",
+      reassign: "No",
+    },
+    {
+      name: "Workflow Review",
+      assignedTo: "Priya",
+      status: "Overdue",
+      dueDate: "13-07-2025",
+      reassign: "Yes",
+    },
+    {
+      name: "Process Audit",
+      assignedTo: "Vikram",
+      status: "Overdue",
+      dueDate: "14-07-2025",
+      reassign: "No",
+    },
+  ];
 
   const workflowData = [
     {

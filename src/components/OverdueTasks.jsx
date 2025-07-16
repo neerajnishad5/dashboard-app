@@ -1,17 +1,11 @@
 export default function OverdueTasks({ data }) {
-  const allTasks = [
-    ...(data.Tasks || []).filter((task) => task.status === "Overdue"),
-    ...(data.Issues || []).filter((task) => task.status === "Overdue"),
-    ...(data.Workflows || []).filter((task) => task.status === "Overdue"),
-  ];
-
   return (
     <div className="border-[#eaebea] border rounded-2xl p-2 m-3 ml-4">
       <div className="flex justify-between items-center mb-2">
         <h3 className="font-semibold mb-2 text-[14px] flex items-center gap-2">
           Overdue Tasks
           <span className="bg-[#f2f5f7] text-black text-[12px] w-6 h-6 flex items-center justify-center rounded-full">
-            {allTasks.length}
+            {data?.length}
           </span>
         </h3>
         <div className="input-icons flex items-center justify-center gap-2">
@@ -52,7 +46,7 @@ export default function OverdueTasks({ data }) {
               </tr>
             </thead>
             <tbody>
-              {allTasks.map((task, index) => (
+              {data?.map((task, index) => (
                 <tr key={index} className="border-b border-[#eaebea]">
                   <td className="p-2">{task.name}</td>
                   <td className="p-2 text-center">{task.assignedTo}</td>
