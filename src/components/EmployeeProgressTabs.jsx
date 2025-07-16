@@ -12,9 +12,9 @@ function EmployeeProgressTabs({ data }) {
   return (
     <div className="mt-4 border-[#eaebea] border rounded-2xl p-2 m-4">
       <div className="flex justify-between items-center mb-2">
-        <h3 className="text-lg font-semibold mx-2 my-1">
+        <p className="text-lg font-semibold mx-2 my-1 text-[14px]">
           Employee wise progress
-        </h3>
+        </p>
         <div className="input-icons flex items-center justify-center gap-2">
           <select className="p-1 rounded-md text-sm bg-[#f6f8fb] h-[32px]">
             <option>Select Employee</option>
