@@ -30,7 +30,11 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
   };
 
   return (
-    <div className={`hidden md:block fixed top-9 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${ localIsCollapsed ? "w-16" : "w-60"} flex flex-col`}>
+    <div
+      className={`hidden md:block fixed top-9 left-0 h-[calc(100vh-4rem)] p-4 transition-all duration-300 ease-in-out ${
+        localIsCollapsed ? "w-16" : "w-60"
+      } flex flex-col`}
+    >
       <div className="navigation flex-grow">
       <nav className="space-y-2 mt-8">
         {navItems.map(({ to, label, icon }, index) => (
@@ -71,8 +75,14 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
       </nav>
     </div>
 
-      <div className="bottom-section absolute bottom-4  w-full">
-        <div className="chat flex flex-col justify-start p-2 rounded shadow-sm mb-2">
+      <div className="bottom-section absolute bottom-4 w-full">
+        <div
+          className={`chat flex flex-col justify-start p-2 rounded  mb-2 ${
+            localIsCollapsed
+              ? "hover:cursor-pointer text-black hover:bg-gray-200"
+              : "shadow-sm"
+          }`}
+        >
           <p className="text-[12px]">
             <span className="flex items-center gap-2">
               <img
@@ -86,7 +96,11 @@ export default function Sidebar({ isCollapsed, setIsCollapsed }) {
         </div>
 
         <div
-          className={`bottom-sidebar flex items-center gap-2 p-2 bg-[#f6f8fb] rounded-md ${ localIsCollapsed ? "p-1" : "p-2"}`}
+          className={`bottom-sidebar flex items-center gap-2 p-2 rounded-md ${
+            localIsCollapsed
+              ? "hover:cursor-pointer text-black hover:bg-gray-200"
+              : "shadow-sm bg-[#f6f8fb]"
+          }`}
         >
           <div className={`image ${localIsCollapsed ? "w-5 h-5" : "w-8 h-8"}`}>
             <p
